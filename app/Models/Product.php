@@ -21,6 +21,7 @@ class Product extends Model
         'category_id',
     ];
     protected $appends = ['image_url'];
+
     public static function generateUniqueSlug(string $name)
     {
         $slug = Str::slug($name);
